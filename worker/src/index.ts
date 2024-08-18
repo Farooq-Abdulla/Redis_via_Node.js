@@ -10,7 +10,7 @@ async function processSubmission(submission: string) {
   // Here you would add your actual processing logic
 
   // Simulate processing delay
-  await new Promise(resolve => setTimeout(resolve, 4000));
+  await new Promise(resolve => setTimeout(resolve, 3000));
   console.log(`Finished processing submission for problemId ${problemId}.\n`);
 }
 
