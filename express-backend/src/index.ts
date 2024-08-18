@@ -20,7 +20,7 @@ app.post('/submit', async (req, res) => {
     await client.lPush("submissions", JSON.stringify({ problemId, userId, code, language }))
     res.json({ message: "Submission received" })
   } catch (e) {
-    res.json({ message: "Submission failed" })
+    res.json({ message: "Submissions failed" })
   }
 })
 
